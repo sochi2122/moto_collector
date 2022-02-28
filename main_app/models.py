@@ -37,7 +37,7 @@ class Mile(models.Model):
         return f"{self.get_date_display()} on {self.date}"
         # get_<attribute name>_display()
     class Meta:
-        ordering = ["date"]
+        ordering = ['-date']
 class Photo(models.Model):
   url = models.CharField(max_length=200)
   motorcycle = models.ForeignKey(Motorcycle, on_delete=models.CASCADE)

@@ -7,7 +7,7 @@
 <div class="card">
     <a href="{% url 'accessories_detail' accessory.id %}">
         <div class="card-content">
-            <span class="card-title">A <span class="{{ accessory.name }}-text"></span> {{ accessory.brand }} {{ accessory.model }}</span>
+            <span class="{{ accessory.name }}-text">{{ accessory.model }} {{ accessory.name }} by {{ accessory.brand }} </span>
         </div>
     </a>
 </div>

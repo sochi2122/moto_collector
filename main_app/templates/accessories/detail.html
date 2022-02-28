@@ -8,7 +8,7 @@
 <div class="card">
     <a href="{% url 'accessories_detail' accessory.id %}">
         <div class="card-content">
-            <span class="card-title">A <span class="{{ accessory.name.lower }}-text">{{ accessory.brand }}</span> {{ accessory.model }}</span>
+            <span class="card-title"> &#8226  <span class="{{ accessory.name }}-text">  {{ accessory.name }} by {{ accessory.brand }}</span> </span>
         </div>
         <div class="card-action">
             <a href="{% url 'accessories_update' accessory.id %}">Edit</a>
